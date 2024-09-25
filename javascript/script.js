@@ -951,16 +951,18 @@ Add a new method called editData to Admin  that allows it to edit website data.*
 
 // <-- Fetch API using promise Chain-->
 
-const URL ="https://cat-fact.herokuapp.com/facts"
-const factPara=document.querySelector("#fact");
+// const URL ="https://cat-fact.herokuapp.com/facts"
+// const factPara=document.querySelector("#fact");
 
-function getFacts() {
- fetch(URL).then((response) =>{
-  return response.json();
- })
- .then((data)=>{
-  console.log(data[1].text);
-  factPara.innerText = data[1].text;
- })
-}
+// function getFacts() {
+//  fetch(URL).then((response) =>{
+//   return response.json();
+//  })
+//  .then((data)=>{
+//   console.log(data[1].text);
+//   factPara.innerText = data[1].text;
+//  })
+// }
+
+
 
