@@ -1,11 +1,12 @@
 // console.log("hello world");
 
 // Arithmetic operators
+
 // let a = 6;
 // let b = 3;
 // console.log("a =",a, "& b = ",b);
 // console.log("a + b =",a + b);
-// console.log("a -  =",a - b);
+// console.log("a - b =",a - b);
 // console.log("a * b =",a * b);
 // console.log("a / b =",a / b);
 
@@ -148,9 +149,9 @@
 check if the number is a multiple of 5 or not*/
 
 // let data = prompt("Enter a number:");
-// console.log(typeof data)
-// let num_data = Number(data)
-// console.log(typeof num_data)
+// // console.log(typeof data)
+// let num_data =data
+// // console.log(typeof num_data)
 
 // if(num_data % 5 === 0){
 //     console.log(num_data,"is a multiple of 5");
