@@ -603,13 +603,15 @@ rounding a decimal number, floor of decimal number, power of 3 of a number.*/
 // 19. write a program to find all permutations of a string "suj".
 
 // 20. write a program to return square of all numbers in an array.
-function squareArray(arr){
-    let squareArr = arr.map((num) =>{
-        return num*num;
-    });
-    return squareArr;
-}
-const num = [1,2,3,4,5,6];
-const squaredNumber = squareArray(num);
-console.log(squaredNumber);
+// function squareArray(arr){
+//     let squareArr = arr.map((num) =>{
+//         return num*num;
+//     });
+//     return squareArr;
+// }
+// const num = [1,2,3,4,5,6];
+// const squaredNumber = squareArray(num);
+// console.log(squaredNumber);
+
+
 
