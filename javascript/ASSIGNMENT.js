@@ -487,7 +487,6 @@ and go to the next iteretion*/
 // const result = concatenateStrAndNum(str,num);
 // console.log(result);
 
-
 /* 14. write a simple program to compare if two strings are equal by length
  or equal by value, if anything out of the two is okay print equal.*/
 
@@ -533,9 +532,7 @@ in same above program instead of printing all strings with "an" push it into a n
 // }
 // console.log(newArr);
 
-
 // 16. what is function . write a program to find the age of a person with dob as parameter in function.
-
 
 // 17. what is recursive function .Write program to find factorial of number using for loop and recursive function.
 // Using for loop
@@ -548,7 +545,6 @@ in same above program instead of printing all strings with "an" push it into a n
 //    return output;
 // }
 // console.log(findFactorialNumber(6));
-
 
 // Using recursive function
 // function findFactorialUsingRecursive(num){
@@ -613,5 +609,400 @@ rounding a decimal number, floor of decimal number, power of 3 of a number.*/
 // const squaredNumber = squareArray(num);
 // console.log(squaredNumber);
 
+// 21. write a program to filter all numbers which are divisible by seven from an array .
 
+// function filterAllNumDivisibleBySeven(num){
+//     return num.filter((num)=>{
+//      return  num % 7 ===0;
+//     });
+// }
+// const array = [12,35,21,47,49,50,56,80,72];
+// const finalArr = filterAllNumDivisibleBySeven(array);
+// console.log(finalArr);
+
+// 22. what is class and class variable, what is object and what is interface.
+
+//----Class----
+// class user{
+//   constructor(username,age,email,password){
+//     this.username = username;
+//     this.age = age;
+//     this.email = email;
+//     this.password = password;
+//   }
+//   logMe(){
+//       console.log(`Username: ${this.username}`);
+//       console.log(`Age: ${this.age}`);
+//       console.log(`Email: ${this.email}`);
+//       console.log(`Password: ${this.password}`)
+//   }
+// }
+// const user1 = new user("Adam","30","adam@gmail.com","123");
+// user1.logMe();
+
+//---object---
+// const employees ={
+//   name : "chetan",
+//   age : 28,
+//   job : "engineer",
+// }
+// console.log("Employee Name:",employees.name);
+
+// 23. write a program to swap the two elements in the list.
+// Input : List = [23, 65, 19, 90], pos1 = 1, pos2 = 3
+// Output : [19, 65, 23, 90]
+
+// function swapTwoElement(list,pos1,pos2){
+//     if(pos1 < 0 || pos2 < 0 ){
+//         console.log("invalid  indices");
+//         return;
+//     }
+//     const temp = list[pos1];
+//     list[pos1] = list[pos2];
+//     list[pos2] = temp;
+// }
+// const arrList = [23,65,19,90];
+// console.log("Before swap:",arrList)
+//  swapTwoElement(arrList,1,3);
+// console.log("After Swap:",arrList);
+
+// write a program to print all roman numeral from 1 to 40
+// JS
+
+// function convertNumToRoman(num) {
+//   const romanNumeral = {
+//     ones: ["", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"],
+//     tens: ["", "X", "XX", "XXX", "XL", "L"],
+//   };
+
+//   let ones = num % 10;
+//   let tens = Math.floor(num / 10);
+
+//   return romanNumeral.tens[tens] + romanNumeral.ones[ones];
+// }
+
+// function printAllRomanNumeral() {
+//   for (let i = 1; i <= 40; i++) {
+//     console.log(`${i}: ${convertNumToRoman(i)}`);
+//   }
+// }
+// printAllRomanNumeral();
+
+// 24. what is hoisting in js: https://www.youtube.com/watch?v=_FmHfOqJ4SY.
+//Function Hosting
+// greet ()
+
+// function greet(){
+//   console.log("Hello World");
+// }
+
+// //Variable Hosting
+
+// console.log(a);
+
+// var a = 10;//Declaration hosted to the top  but initialization is not
+// console.log(a)
+
+// console.log(b);
+// let b = 9;
+
+// logMe ()
+// let logMe = function (){  //function expression and class expression are not hosted.
+//   console.log("Good Morning");
+// }
+
+// 25. all comparison operators programs using if else and logical operators.
+
+// function allComparisonOperators(x,y){
+//  // Equal to (=)
+//  if(x == y){
+//     console.log(`${x}is equal to ${y}`);
+//  }else{
+//     console.log(`${x} not equal to ${y}`)
+//  }
+
+//  //strict equal to (===)
+//  if (x === "y"){
+//     console.log(`${x} is equal to ${y}`);
+//  }else{
+//     console.log(`${x} not equal to ${y}`);
+//  }
+
+//  //Greater than (>)
+//  if(x > y){
+//     console.log(`${x}is greater than ${y}`);
+//  }else{
+//     console.log(`${x}is less than${y}`);
+//  }
+
+//  //Less than (<)
+//  if(x < y){
+//     console.log(`${x} is less than ${y}`);
+//  }else{
+//     console.log(`${x} is greater than ${y}`)
+//  }
+
+//  //Greater than equal to (>=)
+// if(x >= y){
+//     console.log(`${x} is greater than or equal to ${y}`);
+// }else{
+//     console.log(`${x} is not greater than or equal to ${y}`);
+// }
+
+// //Less than equal to (<=)
+// if(x <= y){
+//     console.log(`${x} is less than or equal to ${y}`);
+// }else{
+//     console.log(`${x} is not less than or equal to ${y}`);
+// }
+
+// //Logical AND (&&)
+// if(x > 50  && y > 50){
+//     console.log(` Both ${x} and ${y} are greater than 50 `);
+// }else{
+//     console.log(`both ${x} and ${y} are not greater than 50`)
+// }
+
+// //Logical OR (||)
+// if(x > 0  || y > 0){
+//     console.log(`At least one of ${x} or ${y} is greater than 0`);
+// }else{
+//     console.log(`Neither ${x} nor ${y}  is greater than 0`)
+// }
+
+// //Logical NOT (!)
+// if(!(x = y)){
+//     console.log(`${x} is not equal to ${y}`);
+// }else{
+//     console.log(`${x} equal to ${y}`);
+// }
+
+// }
+// allComparisonOperators(10,30);
+
+// 26. write a program to return square of all numbers in an array
+// //  using map function of array.
+
+// function squareOfAllNumbers(arr){
+//     return arr.map(number => number*number);
+// }
+// const array = [2,3,4,5,6,7];
+// const squareArr = squareOfAllNumbers(array);
+// console.log(squareArr);
+
+// 27. write a program to filter all numbers which are divisible by seven from an array
+// using filter method of array.
+
+// function filterNumbersDivisibleBySeven(numbers){
+
+//     return numbers.filter(num => num % 7 === 0);
+// }
+// const numbers = [23,56,43,21,88,49,55,63,72,35];
+// console.log(filterNumbersDivisibleBySeven(numbers));
+
+// 28. what is settimeout in js and setinterval in js: https://www.youtube.com/watch?v=Ruq4sEw9h_8
+
+//setTimeOut - Runs after specified delay
+// alert("hello");
+
+// let a = setTimeout(() => {
+//   alert("I am in the settimeout");
+// }, 3000);
+
+// clearTimeout(a);
+// console.log(a);
+
+// console.log("one");
+// console.log("two");
+// console.log("three");
+
+// setTimeout(() =>{
+//   console.log("four");
+//   console.log("five");
+//   console.log("six");
+// },4000);
+
+//setInterval - Runs repeatedly at specified interval
+// setInterval(()=>{
+//  console.log("setinterval");
+// },2000);
+
+// 29. what are js promises. give an example of js callback and js promises
+//JS Promises : A Promises in Javascript is an object that represent the eventual
+// completition of an asynchronous operation. It is a solution to callback hell.
+
+//  let promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       const data = "successfully";
+//       resolve(data);
+// reject(data);
+//   }, 2000);
+// });
+
+// promise.then((data) => {
+//   console.log("Data received:", data);
+// })
+// .catch((err) => {
+//   console.error("Error fetching data:", err);
+// });
+
+//Callback
+// function sum(a,b){
+//   console.log(a+b);
+// }
+
+// // function calculate(a,b,sum){
+// //   sum(a,b);
+// // }
+
+// //  calculate(3,6,sum);
+
+// 30. write a foreach loop to print index and array element in js
+// function printArrAndIndexElement(fruits){
+
+// fruits.forEach((element,index) => {
+//     console.log(`Index:${index}, Element: ${element}`);
+// });
+
+// }
+// const fruits = ["apple","mango","banana","avocado","litchi","cherry"];
+// printArrAndIndexElement(fruits);
+
+
+
+
+
+
+
+// 31. lexical scope: https://www.youtube.com/watch?v=CNk33k5nScg
+
+// function outer() {
+//   let username = "papiya";
+//   console.log(username);
+
+//   function inner() {
+//     console.log("inner:", username);
+//   }
+
+//   function innerTwo() {
+//     console.log("innerTwo:", username);
+//   }
+
+//   inner();
+//   innerTwo();
+
+// }
+// outer();
+
+// 32: es5 vs es6 : https://www.youtube.com/watch?v=Iek4DtRobLA
+
+// 33. asynchronous vs synchronous
+//Synchronous : Synchronous means the code run in a particular  sequence of
+// instructions given in the program.Each instruction waits for
+// the previous instruction to complete its execution.
+
+// console.log("one");
+// console.log("two");
+// console.log("three");
+// console.log("fourd");
+// console.log("five");
+// console.log("six");
+
+//Asynchronous : due to synchronous programming,sometimes important instruction
+// get blocked to some previous instructions,which cause a delay in the UI.
+//Asynchronous code executions allow to execute next instructions immediately
+// and does not block the flow.
+// console.log("")
+// console.log("one");
+// console.log("two");
+// console.log("three");
+
+// setTimeout(()=>{
+//   console.log("Async Operation");
+// },3000);
+
+// console.log("four");
+// console.log("five");
+// console.log("six");
+
+// 34. what is callback in js: https://www.youtube.com/watch?v=z-H8S83jJec
+//Callback : Callback is a function passed as an argument into another function.
+//method 1
+// const calculator = (a,b,operation) =>{
+//   return operation(a , b);
+// }
+
+// function addition(a,b){
+//   return(a + b);
+// }
+
+// console.log(calculator(4,5,addition));
+
+//method 2
+// const subtruction = calculator(8,3,function(num1,num2){
+// return (num1 - num2);
+// })
+
+// console.log(subtruction);
+
+//method 3
+// const multiplication = (a,b) => a * b;
+
+// const mulResult = calculator(5,2,multiplication);
+
+// console.log(mulResult);
+
+
+
+  
+
+// 35. async await: https://www.youtube.com/watch?v=spvYqO_Kp9Q
+//async-await : An async function always return a promise.Await pauses the execution
+//  of its surrounding async function until the promise is sattled(resoleve or reject).
+
+// function getData(data){
+//   return new Promise((resolve,reject)=>{
+//   setTimeout(()=>{
+//     console.log("data",data);
+//     resolve("success");
+//   },3000);
+//   }
+// )};
+
+// async function getAllData() {
+//   console.log("Fetching data1..")
+//   await getData(1);
+
+//   console.log("Fetching data2..")
+//   await getData(2);
+
+//   console.log("Fetching data3..")
+//   await getData(3);
+
+//   console.log("Fetching data4..")
+//   await getData(4);
+
+//   console.log("Fetching data5..")
+//   await getData(5);
+
+//   console.log("Fetching data6..")
+//   await getData(6);
+// }
+
+// 36. What is JSON
+//JSON : JavaScript Object Notation  is lightweight text-based format for storing
+//  and transporting data.Commonly used for API and config files.
+//JSON Syntax
+// const data = {
+//   "name": "Alice",
+//   "coursename": "JS",
+//   "age": 25,
+//   "price": "free",
+//   "isStudent": true,
+//   "skills": ["Javascript", "HTML", "CSS"],
+//   "address": {
+//     "city": "Agartala"
+//   }
+// }
+// 37. simple calculator using html js css: https://www.youtube.com/watch?v=TXCj39dGLlY
 
